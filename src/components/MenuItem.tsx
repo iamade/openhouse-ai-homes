@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// export default function MenuItem({ title, address, Icon }) {
   const MenuItem: React.FC<{title: string, address: string, Icon: any}> = (props) => {
   return (
     <div>

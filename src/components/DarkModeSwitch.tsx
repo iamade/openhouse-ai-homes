@@ -14,11 +14,8 @@ export default function DarkModeSwitch() {
 
   return (
     <>
-    {/* system theme is :{systemTheme}
-     The current theme is: {currentTheme} */}
-{/* 
-    The current theme is: {currentTheme} */}
-    
+
+
       {mounted && (currentTheme === "dark" ? (
       <MdLightMode className="text-xl cursor-pointer hover:text-amber-500" onClick={() => setTheme('light')} />
       ) : (

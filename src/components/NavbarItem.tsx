@@ -6,16 +6,30 @@ import React from 'react'
 
 const NavbarItem: React.FC<{title: string, param: any}> = (props) => {
     const searchParams = useSearchParams();
-    const genre = searchParams.get("genre");
+    const group = searchParams.get("group");
+    
   return (
+   
     <div>
-       <Link
+         {/* this group is : {group} */}
+       {/* <Link
           className={`m-4 hover:text-amber-600 font-semibold p-2 ${
-            genre &&
-            genre === props.param &&
+            group &&
+            group === props.param &&
             "underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
           }`}
-       href={`/?genre=${props.param}`}>
+     
+      href={`/?group=${props.param}`}>
+        {props.title}
+        </Link> */}
+       <Link
+          className={`m-4 hover:text-amber-600 font-semibold p-2 ${
+            group &&
+            group === props.param &&
+            "underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
+          }`}
+       href={props.param}>
+    
         {props.title}
         </Link>
     </div>
