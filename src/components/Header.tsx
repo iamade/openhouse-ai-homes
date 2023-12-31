@@ -1,6 +1,7 @@
 import MenuItem from "./MenuItem";
 import Link from "next/link";
 import Image from "next/image";
+import DarkModeSwitch from "./DarkModeSwitch";
 import { IoMdHome } from "react-icons/io";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 
@@ -16,7 +17,8 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className="flex">
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <MenuItem title="HOME" address="/" Icon={IoMdHome} />
         <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
