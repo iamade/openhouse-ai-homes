@@ -1,4 +1,4 @@
-## If Given more time
+## If given more time
 I would create a page to display details of each home within a selected community. 
 I would also allow users compare price to see which price is favorable to them.
 If provided with pictures of the homes I would display them for more user engagement
