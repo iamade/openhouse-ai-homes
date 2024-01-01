@@ -1,3 +1,9 @@
+## If Given more time
+I will create a page to display each home within the community  
+
+## After cloning 
+run npm install
+
 ## Node to use
 Node.js version >= v18.17.0 is required.
 

@@ -12,6 +12,7 @@ export default async function Communities() {
   const COMMUNITY_FULL_URL = `${API_BASE_URL}/communities.json`;
   const FULL_URL = `${API_BASE_URL}/homes.json`;
 
+  //Fetch Community data
   const communityResponse = await fetch(COMMUNITY_FULL_URL, {
     method: "GET",
     headers: {
@@ -19,7 +20,7 @@ export default async function Communities() {
     },
   });
 
-  
+  //Fetch Home data
   const homeResponse = await fetch(FULL_URL, {
     method: "GET",
     headers: {
@@ -27,7 +28,7 @@ export default async function Communities() {
     },
   });
 
-
+//Error check
   if (!communityResponse.ok || !homeResponse.ok ) {
     throw new Error("Failed to fetch data");
   }
