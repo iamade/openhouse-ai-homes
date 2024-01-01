@@ -20,7 +20,6 @@ export default function Header() {
       <div className="flex items-center space-x-5">
         <DarkModeSwitch />
         <MenuItem title="HOME" address="/" Icon={IoMdHome} />
-        <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
     
     </div>
