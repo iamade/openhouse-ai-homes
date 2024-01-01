@@ -1,5 +1,7 @@
 ## If Given more time
-I will create a page to display each home within the community  
+I would create a page to display details of each home within a selected community. 
+I would also allow users compare price to see which price is favorable to them.
+If provided with pictures of the homes I would display them for more user engagement
 
 ## After cloning 
 run npm install
